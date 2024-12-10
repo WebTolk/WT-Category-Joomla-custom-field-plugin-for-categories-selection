@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="fields" method="upgrade">
+	<name>PLG_FIELDS_WTCATEGORY</name>
+	<author>Sergey Tolkachyov</author>
+	<creationDate>09.12.2024</creationDate>
+	<copyright>(C) 2024 Sergey Tolkachyov.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@web-tolk.ru</authorEmail>
+	<authorUrl>https://web-tolk.ru</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_FIELDS_WTCATEGORY_DESC</description>
+	<namespace path="src">Joomla\Plugin\Fields\Wtcategory</namespace>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<folder>params</folder>
+		<folder plugin="wtcategory">services</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language" client="administrator">
+		<language tag="en-GB">en-GB/plg_fields_wtcategory.ini</language>
+		<language tag="en-GB">en-GB/plg_fields_wtcategory.sys.ini</language>
+		<language tag="ru-RU">ru-RU/plg_fields_wtcategory.ini</language>
+		<language tag="ru-RU">ru-RU/plg_fields_wtcategory.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="plugininfo"
+					   type="plugininfo"
+					   addfieldprefix="Joomla\Plugin\Fields\Wtcategory\Fields"
+				/>
+				<field
+						name="multiple"
+						type="list"
+						label="PLG_FIELDS_WTCATEGORY_PARAMS_MULTIPLE_LABEL"
+						filter="boolean"
+						validate="options"
+						default="0"
+						layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field
+						name="published"
+						type="list"
+						label="PLG_FIELDS_WTCATEGORY_PARAMS_PUBLISHED_LABEL"
+						filter="boolean"
+						validate="options"
+						default="0"
+						layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field
+						name="language"
+						type="contentlanguage"
+						label="JFIELD_LANGUAGE_LABEL"
+				>
+					<option value="*">JALL</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="WT Category updates">https://web-tolk.ru/component/swjprojects/jupdate?element=wtcategory</server>
+	</updateservers>
+	<changelogurl>https://web-tolk.ru/jchangelog?element=wtcategory</changelogurl>
+</extension>

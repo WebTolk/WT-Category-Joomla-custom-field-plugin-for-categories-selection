@@ -1,7 +1,7 @@
 <?php
 /**
- * @package       WT Category custom field
- * @version       1.0.0
+ * @package    Fields - WT Category
+ * @version       1.0.1
  * @Author        Sergey Tolkachyov, https://web-tolk.ru
  * @copyright     Copyright (C) 2024 Sergey Tolkachyov
  * @license       GNU/GPL http://www.gnu.org/licenses/gpl-3.0.html

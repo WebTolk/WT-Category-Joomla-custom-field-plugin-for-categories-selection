@@ -2,12 +2,12 @@
 <extension type="plugin" group="fields" method="upgrade">
 	<name>PLG_FIELDS_WTCATEGORY</name>
 	<author>Sergey Tolkachyov</author>
-	<creationDate>09.12.2024</creationDate>
-	<copyright>(C) 2024 Sergey Tolkachyov.</copyright>
+	<creationDate>24.02.2025</creationDate>
+	<copyright>Copyright (c) 2024 - 2025 Sergey Tolkachyov. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later</license>
 	<authorEmail>info@web-tolk.ru</authorEmail>
 	<authorUrl>https://web-tolk.ru</authorUrl>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>PLG_FIELDS_WTCATEGORY_DESC</description>
 	<namespace path="src">Joomla\Plugin\Fields\Wtcategory</namespace>
 	<scriptfile>script.php</scriptfile>

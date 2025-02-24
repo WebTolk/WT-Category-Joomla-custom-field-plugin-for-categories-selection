@@ -1,7 +1,7 @@
 <?php
 /**
- * @package       WT Category custom field
- * @version       1.0.0
+ * @package    Fields - WT Category
+ * @version       1.0.1
  * @Author        Sergey Tolkachyov, https://web-tolk.ru
  * @copyright     Copyright (C) 2024 Sergey Tolkachyov
  * @license       GNU/GPL http://www.gnu.org/licenses/gpl-3.0.html
@@ -16,12 +16,12 @@ use Joomla\CMS\User\CurrentUserTrait;
 use Joomla\Component\Fields\Administrator\Plugin\FieldsPlugin;
 use Joomla\Database\DatabaseAwareTrait;
 use Joomla\Database\ParameterType;
-use Joomla\Event\SubscriberInterface;
 use Joomla\Registry\Registry;
 use Joomla\Utilities\ArrayHelper;
+use function defined;
 
 // phpcs:disable PSR1.Files.SideEffects
-\defined('_JEXEC') or die;
+defined('_JEXEC') or die;
 // phpcs:enable PSR1.Files.SideEffects
 
 /**

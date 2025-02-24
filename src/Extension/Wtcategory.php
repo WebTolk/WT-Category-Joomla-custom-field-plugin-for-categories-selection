@@ -29,7 +29,7 @@ use Joomla\Utilities\ArrayHelper;
  *
  * @since  3.7.0
  */
-final class Wtcategory extends FieldsPlugin implements SubscriberInterface
+final class Wtcategory extends FieldsPlugin
 {
 
 	use DatabaseAwareTrait;
